@@ -1,0 +1,33 @@
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.btn-small {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.btn-medium {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.btn-large {
+    padding: 15px 30px;
+    font-size: 20px;
+}
+
+.btn-light {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.btn-dark {
+    background-color: #333;
+    color: #fff;
+}
