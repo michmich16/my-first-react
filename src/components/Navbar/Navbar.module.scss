@@ -1,0 +1,13 @@
+.navbarStyle{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+
+    li{
+        list-style: none;
+        text-align: center;
+    }
+}
