@@ -6,6 +6,8 @@ import { Footer } from "./components/Footer/Footer";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Livrettet } from "./components/Livretter/Livretter";
 
+//test git
+
 function App() {
 
   const favDishes = ['pizza', 'lasagne', 'burger', 'fried worms', 'human head']
