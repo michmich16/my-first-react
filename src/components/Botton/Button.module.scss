@@ -1,33 +1,31 @@
-.btn {
-    padding: 10px 20px;
-    border: none;
+.buttonStyle {
     border-radius: 4px;
+    height: 32px;
+    outline: none;
+    border: solid 1px;
+    transition: filter 0.3s ease;
     cursor: pointer;
-    margin: 10px;
-    font-size: 16px;
-}
-
-.btn-small {
-    padding: 5px 10px;
-    font-size: 12px;
-}
-
-.btn-medium {
-    padding: 10px 20px;
-    font-size: 16px;
-}
-
-.btn-large {
-    padding: 15px 30px;
-    font-size: 20px;
-}
-
-.btn-light {
-    background-color: #f0f0f0;
-    color: #000;
-}
-
-.btn-dark {
-    background-color: #333;
-    color: #fff;
-}
+    &:hover {
+      filter: invert(100%);
+    }
+  }
+  
+  .smallButton {
+    @extend .buttonStyle;
+    width: 120px;
+    height: 26px;
+  }
+  .mediumButton {
+    @extend .buttonStyle;
+    width: 160px;
+    height: 32px;
+  }
+  .largeButton {
+    @extend .buttonStyle;
+    width: 220px;
+    height: 36px;
+  }
+  .defaultButton {
+    @extend .buttonStyle;
+    width: auto;
+  }

@@ -46,6 +46,8 @@ function App() {
         text="Large Light Button"
       />
 
+      {/* this Wrapper has a props.children, so it can contain another child element in it but it will need to use html closing tag */}
+
       <Wrapper title="Overskrift" subtitle="Underskrift" >
         <Card title="Card Title" textContent="Hej med dig den her er text content" footerContent="FOOTER" />
         <Card title="Card Title" textContent="Hej med dig jeg skriver lorem ip sum " footerContent="FOOTER" />
