@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer/Footer";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Livrettet } from "./components/Livretter/Livretter";
 import { Button } from "./components/Botton/Button";
+import { Wrapper } from './components/Wrapper/Wrapper';
 
 //test git
 
@@ -20,7 +21,7 @@ function App() {
       <Navbar />
       <h1>Hello World!!</h1>
       <Main />
-      <Greetings textValue="Michael" />
+      <Greetings textValue="Michael" /> 
       <Greetings textValue="Oscar" />
       <Greetings textValue="Fred" />
       <Livrettet dishLists={favDishes} />
@@ -43,6 +44,9 @@ function App() {
         theme="light"
         text="Large Light Button"
       />
+
+      <Wrapper title = "Overskrift" subtitle = "Underskrift"/>
+
 
       <Footer />
     </>
