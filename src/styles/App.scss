@@ -6,8 +6,12 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+    width: 340px;
+    justify-content: center;
+    margin: auto;
 
     img {
-        width: 100%;
+        width: 330px;
+        height: 330px;
     }
 }
