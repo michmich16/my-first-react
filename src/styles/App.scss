@@ -1,9 +1,13 @@
-body{
+body {
     background-color: white;
 }
 
-.CardGrid{
+.cardGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
- }
+
+    img {
+        width: 100%;
+    }
+}

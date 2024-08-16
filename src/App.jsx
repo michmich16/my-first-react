@@ -25,13 +25,13 @@ function App() {
     {
       title: "Card Title 2",
       textContent: "Hej med dig jeg kender ikke fasar",
-      img: 'fasar.jpg',
+      img: 'laughingman1.jpg',
       footerContent: "Just a FOOTER 2"
     },
     {
       title: "Card Title 3",
       textContent: "Hej med dig jeg kender ikke fasar",
-      img: 'fasar.jpg',
+      img: 'laughingman2.jpg',
       footerContent: "Just a FOOTER 3"
     },
   ]
@@ -69,13 +69,14 @@ function App() {
       {/* this Wrapper has a props.children, so it can contain another child element in it but it will need to use html closing tag */}
 
       <Wrapper title="Card Overskrift" subtitle="Card Underskrift" >
-        <Card title="Card Title 0" textContent="Hej med dig jeg elsker lidl<3 meget" img= 'fasar.jpg' footerContent="Just a FOOTER lol" />
-        <Card title="Card Title 0.1" textContent="Hej med dig jeg skriver lorem ipsum " img='/fasar.jpg' footerContent="Just a FOOTER lmao" />
-        <Card title="Card Title 0.2" textContent="Hej med dig jeg kan ikke lide netto" img= 'fasar.jpg' footerContent="Just a FOOTER lmfao" />
-        {cardInfo.map((card) => {
-          return (<Card title={card.title} textContent={card.textContent} img={card.img} footerContent={card.footerContent} />)
-        })}
-
+        <div className='cardGrid'>
+          <Card title="Card Title 0" textContent="Hej med dig jeg elsker lidl<3 meget" img='laughingman3.jpg' footerContent="Just a FOOTER lol" />
+          <Card title="Card Title 0.1" textContent="Hej med dig jeg skriver lorem ipsum " img='laughingman4.jpg' footerContent="Just a FOOTER lmao" />
+          <Card title="Card Title 0.2" textContent="Hej med dig jeg kan ikke lide netto" img='laughingman5.jpg' footerContent="Just a FOOTER lmfao" />
+          {cardInfo.map((card) => {
+            return (<Card title={card.title} textContent={card.textContent} img={card.img} footerContent={card.footerContent} />)
+          })}
+        </div>
       </Wrapper>
       <Footer />
     </>
