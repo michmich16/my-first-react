@@ -1,4 +1,5 @@
 import './styles/App.scss';
+import { useState } from 'react';
 import { Greetings } from "./components/Greetings/Greetings";
 import { Header } from "./components/Header/Header";
 import { Main } from "./components/Main/Main";
@@ -9,6 +10,7 @@ import { Button } from "./components/Botton/Button";
 import { Wrapper } from './components/Wrapper/Wrapper';
 import { Card } from './components/Cards/Card';
 import { Counter } from './components/Counter/Counter';
+import { Hilsen } from './components/Hilsen/Hilsen';
 
 
 
@@ -81,6 +83,9 @@ function App() {
       </Wrapper>
 
           <Counter/>
+
+          <Hilsen/>
+
 
       <Footer />
     </>
