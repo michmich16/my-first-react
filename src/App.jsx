@@ -8,6 +8,7 @@ import { Livrettet } from "./components/Livretter/Livretter";
 import { Button } from "./components/Botton/Button";
 import { Wrapper } from './components/Wrapper/Wrapper';
 import { Card } from './components/Cards/Card';
+import { Counter } from './components/Counter/Counter';
 
 
 
@@ -78,6 +79,9 @@ function App() {
           })}
         </div>
       </Wrapper>
+
+          <Counter/>
+
       <Footer />
     </>
 

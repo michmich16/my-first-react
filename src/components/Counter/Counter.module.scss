@@ -1,0 +1,17 @@
+.counterStyle {
+    padding: 3rem;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        display: block;
+        margin: auto;
+        padding: 3rem;
+        font-size: 35px;
+        border-radius: 8px;
+        box-shadow: 5px 5px 10px;
+    }
+}
