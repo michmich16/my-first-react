@@ -2,11 +2,11 @@ import style from './Hilsen.module.scss';
 import { useState } from "react";
 
 export const Hilsen= () => {
-  const [name, setName] = useState("");
+  const [name, setName] = useState('');
 
   return (
     <div className={style.hilsenStyle}>
-        <p>Send en hilsen til {name}</p>
+        <p>Send en hilsen til {name.toLocaleUpperCase()}</p>
       <input
         type="text"
         placeholder="skriv din navn"
@@ -16,3 +16,6 @@ export const Hilsen= () => {
     </div>
   );
 }
+
+
+// (e) i onChange står for event
