@@ -102,7 +102,7 @@ function App() {
 
           <Hilsen/>
 
-          <Modal isOpen={isModalOpen} onClose={handleCloseModal}></Modal>
+          <Modal isOpen={isModalOpen} onClose={handleCloseModal} onSubmit={alert} ></Modal>
 
       <Footer />
     </>

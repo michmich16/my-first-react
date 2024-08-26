@@ -6,7 +6,7 @@ export const Modal = ({ children, isOpen, onClose, onSubmit }) => {
 
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
-      };
+    };
 
     const handleSubmit = () => {
         onSubmit(inputValue);
@@ -18,7 +18,7 @@ export const Modal = ({ children, isOpen, onClose, onSubmit }) => {
     return (
         <div className={style.modalStyle} onClick={onClose}>
             <div className={style.modalContent} onClick={(e) => e.stopPropagation()}>
-            <button className={style.closeButton} onClick={onClose}>X</button>
+                <button className={style.closeButton} onClick={onClose}>X</button>
                 <h2>This is a modal!!!</h2>
                 <input type="text"
                     value={inputValue}
