@@ -11,6 +11,7 @@ import { Wrapper } from './components/Wrapper/Wrapper';
 import { Card } from './components/Cards/Card';
 import { Counter } from './components/Counter/Counter';
 import { Hilsen } from './components/Hilsen/Hilsen';
+import { Modal } from './components/Modal/Modal';
 
 
 
@@ -39,10 +40,25 @@ function App() {
     },
   ]
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleCloseModal = () =>{
+    setIsModalOpen(false);
+  };
+
+
+
   return (
     <>
       <Header headerText="props is cool" />
-      <Navbar />
+      <Navbar>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a onClick={handleOpenModal} href="#">Modal</a></li>
+      </Navbar>
       <h1>Hello World!!</h1>
       <Main />
       <Greetings textValue="Michael" />
@@ -86,6 +102,7 @@ function App() {
 
           <Hilsen/>
 
+          <Modal isOpen={isModalOpen} onClose={handleCloseModal}></Modal>
 
       <Footer />
     </>
