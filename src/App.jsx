@@ -12,6 +12,7 @@ import { Card } from './components/Cards/Card';
 import { Counter } from './components/Counter/Counter';
 import { Hilsen } from './components/Hilsen/Hilsen';
 import { Modal } from './components/Modal/Modal';
+import { Stopur } from './components/Stopur/Stopur';
 
 
 
@@ -103,6 +104,7 @@ function App() {
           <Hilsen/>
 
           <Modal isOpen={isModalOpen} onClose={handleCloseModal} onSubmit={alert} ></Modal>
+          <Stopur/>
 
       <Footer />
     </>
